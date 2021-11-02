@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #222;
+    animation: boucle 2.5s;
+    text-shadow:
+    0 0 7px #b34b1c,
+    0 0 10px #b34b1c,
+    0 0 21px #b34b1c,
+    0 0 42px #eb6123,
+    0 0 82px #eb6123,
+    0 0 92px #eb6123,
+    0 0 102px #eb6123,
+    0 0 151px #eb6123;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.right {
+    text-align: center;
+}
+
+
+/* 1e page */
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3 {
+    color: #000;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 25%;
+    animation: flicker 1.5s infinite alternate;
+}
+
+h4 {
+    margin: 10px;
+}
+
+/* Cards */
+
+.cards-div {
+    text-align: center;
+    margin-top: 150px;
+    color: #000;
+}
+
+.cards {
+    display: inline-block;
+    margin: 10px;
+    width: 250px;
+    border: #b34b1c 2px solid;
+    border-radius: 5%;
+    filter: brightness(0.7);
+}
+
+
+/* Images */
+
+#citrouille {
+    position: absolute;
+    width: 20%;
+    transform: rotate(20deg);
+    opacity: 0.7;
+}
+
+#ghost {
+    position: absolute;
+    width: 25%;
+    transform: rotate(20deg);
+    opacity: 0.7;
+}
+
+/* Boucle */
+
+@keyframes boucle {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+/* Flickering animation */
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 7px #b34b1c,
+        0 0 10px #b34b1c,
+        0 0 21px #b34b1c,
+        0 0 42px #eb6123,
+        0 0 82px #eb6123,
+        0 0 92px #eb6123,
+        0 0 102px #eb6123,
+        0 0 151px #eb6123;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
